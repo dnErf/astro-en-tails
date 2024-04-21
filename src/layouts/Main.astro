@@ -1,4 +1,11 @@
 ---
+interface Props {
+    idKey: string,
+    title: string,
+    classList: string
+}
+
+const { idKey, classList, title } = Astro.props
 ---
 
 <html lang="en">
@@ -7,10 +14,10 @@
         <meta name="generator" content={Astro.generator} />
         <meta name="viewport" content="width=device-width" />
         <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-        <title>{Astro.props.title}</title>
+        <title>{ title } </title>
     </head>
     <body>
-        <main>
+        <main class={ classList } id={ idKey }>
             <slot />
         </main>
     </body>

@@ -6,9 +6,27 @@ import Testimonials from "../components/landing-page-1/Testimonials.astro";
 import Footer from "../components/landing-page-1/Footer.astro";
 ---
 
-<Main title="home">
+<Main idKey="container" title="home" classList="">
     <!-- navigation -->
-    <nav></nav>
+    <nav class="container relative p-4 mx-auto">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="/public/landing-page-1/logo.svg" />
+            </div>
+            <div class="hidden md:flex gap-4 text-sky-900">
+                <a class="cursor-pointer">pricing</a>
+                <a class="cursor-pointer">product</a>
+                <a class="cursor-pointer">careers</a>
+                <a class="cursor-pointer">community</a>
+                <a class="cursor-pointer">about us</a>
+                <div>
+                    <a class="bg-orange-700 text-white p-2 rounded-full cursor-pointer">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <section id="hero">
         <Hero />
     </section>
