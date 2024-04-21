@@ -1,0 +1,18 @@
+---
+interface Props {
+    personName: string,
+    personImg: string,
+}
+
+const { personName, personImg } = Astro.props
+---
+
+<div class="flex flex-col items-center bg-gray-50 p-4">
+    <img src={personImg} alt={personName} class="w-16" />
+    <h5 class="text-lg font-bold">
+         { personName }
+    </h5>
+    <p class="text-sm text-sky-900">
+        <slot />
+    </p>
+</div>

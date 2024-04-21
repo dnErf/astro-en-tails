@@ -1,0 +1,32 @@
+---
+import FeaturesItem from "./FeaturesItem.astro"
+---
+
+<div class="flex flex-col md:flex-row mt-8 gap-4">
+    <div class="space-y-8 md:w-1/2 md:max-w-md">
+        <h2 class="font-bold text-2xl text-center md:text-left">
+            what's different about manage?
+        </h2>
+        <p class="text-sky-900 text-center md:text-left">
+            manage provides all the functionality your teams needs, without the complexity. 
+            our software is tailor-made for modern digital product teams
+        </p>
+    </div>
+    <!-- list -->
+    <div class="space-y-8 md:w-1/2 md:max-w-md">
+        <FeaturesItem bullet="01" heading="track company-wide progress">
+            see how your day-to-day tasks fit into the wider vision. go from tracking progress
+            at the milestone level all the way down to the smallest of details. never loose sight
+            of the bigger picture again.
+        </FeaturesItem>
+        <FeaturesItem bullet="02" heading="advance built-in reports">
+            set internal delivery estimates and track progress toward company goals.
+            our customizable dashboard helps you build out the reports you need to
+            keep key stakeholders informed.
+        </FeaturesItem>
+        <FeaturesItem bullet="03" heading="everything you need in one place">
+            stop jumping from one service to another to communicate, store files, track tasks and
+            share documents. manage offers an all-in-one team productivity solution.
+        </FeaturesItem>
+    </div>
+</div>

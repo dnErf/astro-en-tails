@@ -1,3 +1,6 @@
+# etc
+.astro
+
 # Logs
 logs
 *.log

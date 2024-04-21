@@ -1,0 +1,27 @@
+---
+
+interface Props {
+    bullet: string,
+    heading: string
+}
+
+const { bullet, heading } = Astro.props
+---
+
+<div class="flex flex-col md:flex-row gap-4 items-center md:items-start">
+    <div>
+        <div class="bg-orange-700 rounded-full text-white px-2 py-1 w-8 md:w-full">
+            { bullet }
+        </div>
+    </div>
+    <div class="">
+        <h3 class="font-bold text-center md:text-left">
+            { heading }
+        </h3>
+        <p class="text-sky-900 text-center md:text-left">
+            <small>
+                <slot />
+            </small>
+        </p>
+    </div>
+</div>
