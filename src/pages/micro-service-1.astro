@@ -1,0 +1,36 @@
+---
+// simple ui for microservice output
+import Main from "../layouts/Main.astro";
+---
+
+<Main idKey="container" title="home" classList="">
+    <div class="p-4">
+        <div>
+            <h1 class="font-semibold text-md">Micro Service Output 1</h1>
+            <hr />
+            <br />
+            <button class="my-2 p-2 text-white bg-gray-500">
+                Test Service
+            </button>
+            <br />
+            <div class="border p-2">
+                <span>output shows here...</span>
+            </div>
+        </div>
+        <br />
+        <div class="flex flex-row gap-2">
+            <div class="w-full">
+                <h2 class="font-semibold text-md">sent</h2>
+                <div class="border p-4 h-96">
+                    <span>nothing sent yet...</span>
+                </div>
+            </div>
+            <div class="w-full">
+                <h2 class="font-semibold text-md">received</h2>
+                <div class="border p-4 h-96">
+                    <span>nothing received yet...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</Main>
