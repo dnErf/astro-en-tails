@@ -1,0 +1,27 @@
+---
+import Main from "../layouts/Main.astro";
+import IncomeExpense from "../components/expense-tracker-1/IncomeExpense.astro";
+import TransactionForm from "../components/expense-tracker-1/TransactionForm.astro"
+import TransactionHistory from "../components/expense-tracker-1/TransactionHistory.astro"
+---
+
+<Main idKey="container" title="expense tracker" classList="bg-slate-50 flex justify-center p-2 h-screen">
+    <div class="relative p-2">
+        <div class="font-semibold">
+            EXPENSE TRACKER
+        </div>
+        <div class="py-4">
+            <h4 class="text-lg font-semibold">your balance</h4>
+            <h1 class="text-2xl font-semibold">$ 765.43</h1>
+        </div>
+        <div class="py-4">
+            <IncomeExpense />
+        </div>
+        <div class="py-4">
+            <TransactionForm />
+        </div>
+        <div class="py-4">
+            <TransactionHistory />
+        </div>
+    </div>
+</Main>
