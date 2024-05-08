@@ -1,0 +1,11 @@
+---
+import Main from "../layouts/Main.astro";
+import SideBar1 from "../components/side-bar-1/SideBar1"
+---
+
+<Main idKey="container" title="side bar 1" classList="flex min-h-screen">
+    <SideBar1 client:load />
+    <div class="p-6">
+        home page
+    </div>
+</Main>
