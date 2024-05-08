@@ -1,0 +1,16 @@
+---
+import Main from "../layouts/Main.astro";
+import Navbar from "../components/side-bar-2/Navbar.vue";
+import SideBar2 from "../components/side-bar-2/SideBar2.vue";
+import ContentContainer from "../components/side-bar-2/ContentContainer.vue";
+---
+
+<Main idKey="container" title="side bar 2" classList="min-h-screen h-full bg-black">
+    <div class="mb-4">
+        <Navbar />
+    </div>
+    <div class="mx-auto flex space-x-8">
+        <SideBar2 client:load />
+        <ContentContainer />
+    </div>
+</Main>
