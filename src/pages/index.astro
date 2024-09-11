@@ -2,6 +2,27 @@
 import Main from "../layouts/Main.astro";
 ---
 
+<script>
+    import { signal, effect } from "@preact/signals"
+
+    let t = document.getElementById("txt")
+    let c = signal(0)
+
+    let b = document.getElementById("btn")
+    b.addEventListener("click", () => {
+        c.value += 1
+    })
+
+    effect(() => {
+        t.innerText = c.value.toString()
+    })
+</script>
+
 <Main title="home">
     hello
+
+    <div>
+        <button id="btn" name="btn">add</button>
+        <span id="txt">---</span>
+    </div>
 </Main>
